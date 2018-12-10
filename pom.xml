@@ -20,7 +20,7 @@
   <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.jwebmp</groupId>
-        <artifactId>jwebmp-parent</artifactId>
+        <artifactId>jwebmp-builder</artifactId>
         <version>0.0.0_0-SNAPSHOT</version>
     </parent>
   <artifactId>commons-text</artifactId>
@@ -191,15 +191,6 @@
               <Automatic-Module-Name>${commons.module.name}</Automatic-Module-Name>
             </manifestEntries>
           </archive>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-scm-publish-plugin</artifactId>
-        <configuration>
-          <ignorePathsToDelete>
-            <ignorePathToDelete>javadocs</ignorePathToDelete>
-          </ignorePathsToDelete>
         </configuration>
       </plugin>
     </plugins>
