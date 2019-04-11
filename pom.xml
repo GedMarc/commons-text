@@ -19,12 +19,13 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.jwebmp</groupId>
-        <artifactId>jwebmp-builder</artifactId>
+        <groupId>com.jwebmp.jpms</groupId>
+        <artifactId>jpms-pending-modules</artifactId>
         <version>0.0.0_0-SNAPSHOT</version>
     </parent>
     <artifactId>commons-text</artifactId>
 
+    <groupId>com.jwebmp.jpms.commons</groupId>
     <name>Apache Commons Text</name>
     <description>Apache Commons Text is a library focused on algorithms working on strings.</description>
     <url>http://commons.apache.org/proper/commons-text</url>
@@ -84,7 +85,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.jwebmp</groupId>
+            <groupId>com.jwebmp.jpms.commons</groupId>
             <artifactId>commons-lang3</artifactId>
             <version>${project.version}</version>
         </dependency>
