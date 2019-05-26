@@ -420,29 +420,5 @@
                 </plugins>
             </build>
         </profile>
-
-        <profile>
-            <id>jdk11</id>
-            <activation>
-                <jdk>[9,)</jdk>
-            </activation>
-            <properties>
-                <!-- coverall version 4.3.0 does not work with java 9+, see https://github.com/trautonen/coveralls-maven-plugin/issues/112 -->
-                <coveralls.skip>true</coveralls.skip>
-                <jacoco.skip>true</jacoco.skip>
-            </properties>
-        </profile>
-        <profile>
-            <id>jdk12</id>
-            <activation>
-                <jdk>[12,)</jdk>
-            </activation>
-            <properties>
-                <!-- currently fails with "javadoc: error - The code being documented uses modules but the packages defined in https://docs.oracle.com/javase/8/docs/api/ are in the unnamed module." -->
-                <maven.javadoc.skip>true</maven.javadoc.skip>
-                <!-- spotbugs does not work on java 12 yet, "java.lang.IllegalArgumentException: Unsupported class file major version 56" -->
-                <spotbugs.skip>true</spotbugs.skip>
-            </properties>
-        </profile>
     </profiles>
 </project>
